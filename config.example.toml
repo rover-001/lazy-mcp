@@ -111,3 +111,13 @@ name = "memory"
 description = "Simple graph-based memory and knowledge graph"
 command = "npx"
 args = ["-y", "@modelcontextprotocol/server-memory"]
+
+# Install Hyperconsciousness and create a scoped grant using its README:
+# https://github.com/louis030195/hyperconsciousness
+# Replace all placeholders with your executable, grant ID, and store path.
+# Developer alpha. Read-only example; grants do not isolate OS processes.
+[[servers]]
+name = "hyperconsciousness"
+description = "Encrypted, append-only knowledge with scoped, expiring access (developer alpha)"
+command = "/absolute/path/to/hc"
+args = ["mcp", "--as", "<grant-id>", "--dir", "/absolute/path/to/hc-store"]
